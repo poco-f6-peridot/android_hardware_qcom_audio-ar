@@ -68,8 +68,8 @@ LOCAL_C_INCLUDES += \
     system/media/audio_utils/include \
     external/expat/lib \
     $(call include-path-for, audio-effects) \
-    $(TOP)/vendor/qcom/opensource/agm/ipc/HwBinders/agm_ipc_service/inc/ \
-    $(TOP)/vendor/qcom/opensource/pal/ipc/HwBinders/pal_ipc_server/inc/
+    $(call project-path-for,qcom-audio)/agm/ipc/HwBinders/agm_ipc_service/inc/ \
+    $(call project-path-for,qcom-audio)/pal/ipc/HwBinders/pal_ipc_server/inc/
 
 LOCAL_SRC_FILES := \
     AudioStream.cpp \
